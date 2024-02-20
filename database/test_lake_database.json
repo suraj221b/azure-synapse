@@ -1,0 +1,25 @@
+{
+	"name": "test_lake_database",
+	"properties": {
+		"Name": "test_lake_database",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://storageclairvoyant@storageclairvoyant.dfs.core.windows.net/test_lake_database",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synapse-clairvoyant-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "79b0aa6b-e8b9-4de2-a788-9776f1dd3233"
+	},
+	"type": "DATABASE"
+}
